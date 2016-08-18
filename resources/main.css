@@ -1,0 +1,10 @@
+.list-cell {
+   -fx-padding: 3 3 3 3;
+   -fx-background-color: greenyellow;
+   -fx-text-alignment: center;
+ }
+ 
+ .list-view {
+     -fx-text-alignment: center;
+     -fx-font: sans-serif;
+ }
