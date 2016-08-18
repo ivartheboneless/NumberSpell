@@ -23,6 +23,10 @@ public class NumberSpell extends Application {
         
         Scene scene = new Scene(root);
         
+        //Loading words into the dictionary class
+        Dictionary.load();
+        
+        stage.resizableProperty().setValue(Boolean.FALSE);
         stage.setScene(scene);
         stage.show();
     }

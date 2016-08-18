@@ -72,7 +72,7 @@ public class layoutController implements Initializable {
             invalidEntryMessage.setText("Only digits 2-9 are valid. Please try again!");
         } else {
             //Loading dictionary words
-            Dictionary dictionary = new Dictionary();
+            //Dictionary dictionary = new Dictionary();
             
             //generating phonewords
             CombinationsGenerator generator = new CombinationsGenerator(number);
@@ -81,7 +81,7 @@ public class layoutController implements Initializable {
             //parsing valid phonewords
             List<String> validPhonewords = new ArrayList<>(phonewords);
             for(String w : phonewords) {
-                if(!dictionary.getDictionaryWordList().contains(w)) {
+                if(!Dictionary.getDictionaryWordList().contains(w)) {
                     validPhonewords.remove(w);
                 }
             }

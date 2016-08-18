@@ -25,14 +25,14 @@
             <Font size="18.0" />
          </font>
       </Text>
-      <ListView fx:id="listView" layoutX="62.0" layoutY="228.0" prefHeight="292.0" prefWidth="335.0" visible="false" />
+      <ListView fx:id="listView" layoutX="62.0" layoutY="228.0" prefHeight="292.0" prefWidth="335.0" stylesheets="@main.css" visible="false" />
       <Text fx:id="welcomeMessage" layoutX="66.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The NumberSpell Algorithm generates all possible word combinations that correspond to a number entered on a mobile's keypad." wrappingWidth="344.70703125">
          <font>
             <Font name="System Italic" size="18.0" />
          </font>
       </Text>
       <Label fx:id="combinationsFound" layoutX="64.0" layoutY="527.0" text=" " />
-      <Label fx:id="invalidEntryMessage" layoutX="54.0" layoutY="214.0" textFill="#ff0d00" visible="false">
+      <Label fx:id="invalidEntryMessage" layoutX="54.0" layoutY="231.0" prefHeight="44.0" prefWidth="354.0" textFill="#ff0d00" visible="false">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

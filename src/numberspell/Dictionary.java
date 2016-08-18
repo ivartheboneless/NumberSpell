@@ -4,9 +4,9 @@ import java.util.*;
 import java.io.*;
 
 class Dictionary {
-  private Set<String> mDictionaryWords;
+  private static Set<String> mDictionaryWords;
 
-  public Dictionary(){
+  public static void load(){
     try {
       Scanner scanner = new Scanner(new File("C:\\Users\\Smile\\Documents\\NetBeansProjects\\NumberSpell\\src\\numberspell\\wordList.txt"));
       mDictionaryWords = new HashSet<>();
@@ -21,7 +21,7 @@ class Dictionary {
     }
   }
 
-  public Set<String> getDictionaryWordList(){
+  public static Set<String> getDictionaryWordList(){
     return mDictionaryWords;
   }
 }
